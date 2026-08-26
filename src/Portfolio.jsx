@@ -148,9 +148,39 @@ const projects = [
     flagship: false,
     repos: [{ label: "GitHub", url: "https://github.com/amna-albasher/techgear-plus-azure-migration" }],
   },
+  {
+    id: "compliance-doc-search",
+    title: "Compliance Document Search",
+    subtitle: "Azure AI Search + Blob Storage",
+    description: "Reverse-engineered RAKBANK's compliance document retrieval system. Indexed KYC-style records in Azure Blob Storage with Azure AI Search, enabling instant keyword search and automatic flagging of expired or under-review documents through a custom search interface.",
+    tags: ["Azure Blob Storage", "Azure AI Search", "JavaScript", "Compliance"],
+    category: "Data",
+    flagship: false,
+    repos: [],
+  },
+  {
+    id: "fraud-detection-ml",
+    title: "Fraud Detection Pipeline",
+    subtitle: "Databricks + MLflow + Azure",
+    description: "Reverse-engineered DraftKings' real-time fraud detection approach. Built a Bronze-Silver-Gold pipeline on Databricks, trained a logistic regression model to classify suspicious transactions, tracked runs with MLflow, and exported results to Azure Blob Storage with a live browser-based scoring tool.",
+    tags: ["Databricks", "PySpark", "MLflow", "Machine Learning", "Azure"],
+    category: "Data",
+    flagship: true,
+    repos: [],
+  },
+  {
+    id: "americana-analytics",
+    title: "Restaurant Analytics Platform",
+    subtitle: "Databricks + Power BI + Azure",
+    description: "Reverse-engineered Americana Group's multi-brand restaurant data platform. Simulated order and staffing data across 15 branches and 6 brands, built a Bronze-Silver-Gold pipeline on Databricks with service-time KPIs, exported to Azure Blob Storage, and visualized branch and brand performance in Power BI.",
+    tags: ["Databricks", "Power BI", "Azure Blob Storage", "PySpark", "KPI Analytics"],
+    category: "Data",
+    flagship: true,
+    repos: [],
+  },
 ];
 
-const CATEGORIES = ["All", "DevOps", "AI", "Cloud"];
+const CATEGORIES = ["All", "DevOps", "AI", "Cloud", "Data"];
 
 const skills = [
   { area: "DevOps & CI/CD", items: ["Azure DevOps", "GitHub Actions", "Jenkins", "ArgoCD", "GitOps", "Docker", "Helm", "Trivy", "SonarQube"] },
